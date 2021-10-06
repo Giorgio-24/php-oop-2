@@ -20,3 +20,21 @@ class Product
         $this->provenience = $_provenience;
     }
 };
+
+class User
+{
+    protected $first_name;
+    protected $last_name;
+    protected $age;
+    protected $nickname;
+    protected $subscription_type;
+
+    protected function __construct($_first_name, $_last_name, $_age, $_nickname, $_subscription_type)
+    {
+        $this->first_name = $_first_name;
+        $this->last_name = $_last_name;
+        $this->age = $_age;
+        $this->nickname = $_nickname;
+        $this->subscription_type = $_subscription_type;
+    }
+};
